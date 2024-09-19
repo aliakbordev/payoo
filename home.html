@@ -11,7 +11,81 @@
 </head>
 
 <body>
-    <h1>this is home page</h1>
+    <main class="text-center">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="hero bg-base-200 ">
+                    <div class="hero-content flex-col ">
+                        <!-- account balance -->
+                        <div class="stats shadow">
+                            <div class="stat">
+                                <div class="stat-title">Account Balance</div>
+                                <div id="account-balance" class="stat-value">9400</div>
+                            </div>
+                        </div>
+                        <div class="divider p-0 m-0"></div>
+                        <!-- features start-->
+                        <div>
+                            <button id="show-add-money-form" class="btn btn-active">Add Money</button>
+                            <button id="show-cash-out-form" class="btn btn-active">Cash Out</button>
+                        </div>
+                        <!-- features end -->
+                        <div class="divider p-0 m-0"></div>
+                        <!-- add money form start -->
+                        <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Add Money Amount</span>
+                                    </label>
+                                    <input type="text" id="input-add-money" placeholder="Amount"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Pin Number</span>
+                                    </label>
+                                    <input type="password" id="input-pin-number" placeholder="Pin Number" autocomplete="off"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- add money form End -->
+                        <!-- cash out form start -->
+                        <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Cash Out Amount</span>
+                                    </label>
+                                    <input type="text" id="input-cash-out" placeholder="Amount" class="input input-bordered"
+                                        required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Pin Number</span>
+                                    </label>
+                                    <input type="password" id="input-cash-out-pin" placeholder="Pin Number"
+                                        autocomplete="off" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- cash out form End -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    
 </body>
 
 </html>
